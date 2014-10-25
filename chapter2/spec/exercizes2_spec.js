@@ -2,7 +2,6 @@ describe("Fizzbuzz" , function(){
 	
 	beforeEach(function(){
 		fizzbuzz = new Fizzbuzz();
-		console.log(fizzbuzz)
 	});
 
 	it("knows three is divisible by three", function(){
@@ -30,4 +29,16 @@ describe("Fizzbuzz" , function(){
 	it("returns fizz when passed 3",function(){
 		expect(fizzbuzz.fizzbuzz(3)).toEqual("fizz")
 	});
+
+	it("returns buzz when passed 5",function(){
+		expect(fizzbuzz.fizzbuzz(5)).toEqual("buzz")
+	});
+
+	it("returns fizz buzz when passed 15", function() {
+		expect(fizzbuzz.fizzbuzz(15)).toEqual("fizzbuzz")
+	});
+	it("returns the numer if not divisible by 3,5,or 15",function(){
+		expect(fizzbuzz.fizzbuzz(7)).toEqual(7)
+	});
+
 });
