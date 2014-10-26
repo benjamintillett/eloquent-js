@@ -1,7 +1,15 @@
-function range(start,end, increment) {
+function range(start,end, step) {
 	var result = [];
-	for(var i = start; i <= end; i += increment){
-		result.push(i)
+	step = step || 1
+	if (step < 0){
+		for(var i = start; i >= end; i += step){
+			result.push(i)
+		}		
+	}
+	else{
+		for(var i = start; i <= end; i += step){
+			result.push(i)
+		}
 	}
 	return result
 }
