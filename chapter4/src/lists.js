@@ -45,6 +45,5 @@ function nth(number, list) {
 	return nth(number-1, list["rest"])
 }
 
-console.log(nth(1,{ value: 1, rest: { value: 2, rest: { value: 3 } } }))
 
 
