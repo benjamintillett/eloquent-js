@@ -1,4 +1,3 @@
-ANCESTRY_FILE = require("../ancestors.js")
 ancestry = JSON.parse(ANCESTRY_FILE)
 
 function centuryOfDeath(person) {

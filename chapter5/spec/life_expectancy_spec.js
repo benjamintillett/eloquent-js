@@ -12,7 +12,5 @@ describe("life expectancey",function(){
 		expect(ageAtDeath(ancestry[0])).toEqual(73)
 	})
 
-	it("make a hash of people ageAtDeath by centurary",function)
-
 })
 
