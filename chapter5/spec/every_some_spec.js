@@ -1,5 +1,5 @@
 describe("every some",function(){
-	it("knows all NaN are NaN's",function(){
+	it("knows every element in [NaN, NaN, NaN] are not numbers	",function(){
 		expect(every([NaN, NaN, NaN], isNaN)).toBe(true);
 	});
 	it("knows [NaN, NaN, 4] contains numbers", function(){
